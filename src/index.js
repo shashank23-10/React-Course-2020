@@ -6,7 +6,14 @@ import "./index.css";
 
 function Booklist() {
   return (
-    <section>
+    <section className="booklist">
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
       <Book />
       <Book />
       <Book />
@@ -17,24 +24,17 @@ function Booklist() {
 }
 
 const Book = () => {
+  const title = "The Bear and The Fern";
   return (
-    <article>
-      <Image></Image>
-      <Title />
-      <Author />
+    <article className="book">
+      <img
+        src="https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/51nvk2Smg3L._SX218_BO1,204,203,200_QL40_FMwebp_.jpg"
+        alt=" "
+      />
+      <h1>{title}</h1>
+      <h5>Shashank Pandey</h5>
     </article>
   );
 };
-
-const Image = () => (
-  <img
-    src="https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/51nvk2Smg3L._SX218_BO1,204,203,200_QL40_FMwebp_.jpg"
-    alt=" "
-  />
-);
-
-const Title = () => <h1>The Bear and The Fern</h1>;
-
-const Author = () => <h1>Shashank Pandey</h1>;
 
 ReactDom.render(<Booklist />, document.getElementById("root"));

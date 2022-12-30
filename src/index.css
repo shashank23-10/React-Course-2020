@@ -8,3 +8,35 @@ body {
   background: #f1f5f8;
   color: #222;
 }
+.booklist {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem 1rem;
+}
+.book {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.book h1 {
+  margin-top: 1rem;
+}
+.book h5 {
+  letter-spacing: 0.1rem;
+  color: rgb(177, 215, 248);
+}
+
+/* @media screen and (max-width: 1280px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} */
+
+@media screen and (max-width: 960px) {
+  .booklist {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
