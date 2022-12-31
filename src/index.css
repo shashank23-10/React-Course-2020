@@ -14,6 +14,7 @@ body {
   margin: 5rem auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  /* align-items: start; */
   gap: 2rem 1rem;
 }
 .book {
@@ -31,6 +32,9 @@ body {
 .book h5 {
   letter-spacing: 0.1rem;
   color: rgb(177, 215, 248);
+}
+.book p {
+  margin-top: 0.5rem;
 }
 
 /* @media screen and (max-width: 1280px) {
